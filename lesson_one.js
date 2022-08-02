@@ -18,7 +18,13 @@ const summCounter = (count) => {
 const counter = summCounter(1);
 counter();
 //3
-
+function makeAdd(x) {
+    return function(y) {
+        return x + y;
+    };
+}
+const add5 = makeAdd(5);
+add5(5);
 
 
 
