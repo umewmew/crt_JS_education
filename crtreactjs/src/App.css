@@ -100,15 +100,18 @@
 
 .addBtn-favorite {
   background-color: white;
+  background-position-y: center;
+  background-image: url('../public/image/Icon/icon-favorite.svg');
 }
 
 .addBtn-compare {
   background-color: white;;
 }
 
-/* .add-succes {
-  background-color: gray;
-} */
+.add-succes {
+ /* background-color: chartreuse; */
+ background-image: url('../public/image/Icon/icon-favorite-succes.svg');
+}
 
 
 
