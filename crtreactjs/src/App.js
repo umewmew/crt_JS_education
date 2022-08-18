@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
 import AddButtonItemCart from './components/AddButtonItemCart.js';
+import OrderInfo from './components/OrderInfo.js';
 // import { useState } from 'react';
  
 
 const ItemCart = ({itemImageSrc, itemName, itemRatingValue, itemCommentAmount, itemPriceCurrent, itemOldPrice, itemBonusAmount, descriptionImage }) => {
-  // тут я попыталась сделать UseState
 
   return (
     <div className="itemCart">
@@ -37,53 +37,60 @@ const ItemCart = ({itemImageSrc, itemName, itemRatingValue, itemCommentAmount, i
 function App() {
   return (
     <div className="App">
-    <ItemCart 
-      itemImageSrc="/image/notebookHuawei.webp"
-      descriptionImage="Ноутбук HUAWEI"
-      itemName="Ноутбук HUAWEI MateBook"
-      itemRatingValue="4.2"
-      itemCommentAmount="17"
-      itemPriceCurrent="69 999"
-      itemOldPrice="79 999"
-      itemBonusAmount="2 100"
-      >
-      </ItemCart> 
-
+      <div className="item-cart-list">
       <ItemCart 
-      itemImageSrc='/image/desctopRombica.webp'
-      descriptionImage="Монитор Rombica SkyView"
-      itemName="Монитор Rombica SkyView"
-      itemRatingValue="4.4"
-      itemCommentAmount="19"
-      itemPriceCurrent="7 899"
-      itemOldPrice="11 799"
-      itemBonusAmount="237"
-      >
-      </ItemCart> 
+        itemImageSrc="/image/notebookHuawei.webp"
+        descriptionImage="Ноутбук HUAWEI"
+        itemName="Ноутбук HUAWEI MateBook"
+        itemRatingValue="4.2"
+        itemCommentAmount="17"
+        itemPriceCurrent="69 999"
+        itemOldPrice="79 999"
+        itemBonusAmount="2 100"
+        >
+        </ItemCart> 
 
-      <ItemCart 
-      itemImageSrc='/image/smartHuawei.webp'
-      descriptionImage="Смартфон Huawei nova"
-      itemName="Смартфон Huawei nova"
-      itemRatingValue="4.6"
-      itemCommentAmount="11"
-      itemPriceCurrent="15 999"
-      itemOldPrice="18 999"
-      itemBonusAmount="480"
-      >
-      </ItemCart> 
+        <ItemCart 
+        itemImageSrc='/image/desctopRombica.webp'
+        descriptionImage="Монитор Rombica SkyView"
+        itemName="Монитор Rombica SkyView"
+        itemRatingValue="4.4"
+        itemCommentAmount="19"
+        itemPriceCurrent="7 899"
+        itemOldPrice="11 799"
+        itemBonusAmount="237"
+        >
+        </ItemCart> 
 
-      <ItemCart 
-      itemImageSrc='/image/TVToshiba.webp'
-      descriptionImage="Телевизор Toshiba"
-      itemName="Телевизор Toshiba 34c73737"
-      itemRatingValue="4.9"
-      itemCommentAmount="38"
-      itemPriceCurrent="29 999"
-      itemOldPrice="39 999"
-      itemBonusAmount="900"
-      >
-      </ItemCart> 
+        <ItemCart 
+        itemImageSrc='/image/smartHuawei.webp'
+        descriptionImage="Смартфон Huawei nova"
+        itemName="Смартфон Huawei nova"
+        itemRatingValue="4.6"
+        itemCommentAmount="11"
+        itemPriceCurrent="15 999"
+        itemOldPrice="18 999"
+        itemBonusAmount="480"
+        >
+        </ItemCart> 
+
+        <ItemCart 
+        itemImageSrc='/image/TVToshiba.webp'
+        descriptionImage="Телевизор Toshiba"
+        itemName="Телевизор Toshiba 34c73737"
+        itemRatingValue="4.9"
+        itemCommentAmount="38"
+        itemPriceCurrent="29 999"
+        itemOldPrice="39 999"
+        itemBonusAmount="900"
+        >
+        </ItemCart>
+      </div>
+
+      <div className="order-info">
+        <OrderInfo></OrderInfo>
+      </div>
+
     </div>
   );
 }
