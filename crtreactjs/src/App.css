@@ -1,0 +1,176 @@
+.item-cart-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.itemCart {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  height: 400px;
+  width:  200px;
+}
+
+.itemCart__image-link,
+.itemCart__name-link,
+.value-link,
+.comment-amount-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.itemCart__image {
+  height: 160px;
+  width: 160px;
+}
+
+.itemCart__name {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.itemCart-rating-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.itemCart-rating__value {
+  color: red;
+  font-weight: 500;
+}
+
+.itemCart-rating__comment-amount {
+  color: gray;
+}
+
+.itemCart-price-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.itemCart-price__current {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.itemCart-price__old {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.itemCart-bonus-amount {
+  color: red;
+}
+
+.itemCart-bonus-amount__addition {
+  color: gray;
+}
+
+.itemCart-addBtn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.itemCart-addBtn {
+  border: none;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.addBtn-backet {
+  background-color: red;
+  border-radius: 3px;
+}
+
+.addBtn-favorite {
+  background-color: white;
+  background-position-y: center;
+  background-image: url('../public/image/Icon/icon-favorite.svg');
+}
+
+.addBtn-compare {
+  background-color: white;;
+}
+
+.add-succes {
+ /* background-color: chartreuse; */
+ background-image: url('../public/image/Icon/icon-favorite-succes.svg');
+}
+
+/* для OrderInfo.js */
+.info-input {
+  display: grid;
+  grid-template-columns: 1fr auto;
+
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.info-input_label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info-input input {
+  margin-top: 5px;  
+  padding: 5px;
+}
+
+.info-input button {
+  margin-top: 5px;
+  /* padding: 5px; */
+}
+
+/* не трогать */
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

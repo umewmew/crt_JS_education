@@ -38,8 +38,8 @@ const newNumbersArray = numbersArray.map(num => num * 2);
 const numArray = [2, 6, 10, 1];
 const result = numArray.filter(num => num < 8);
 //reduce
-const ArrayNumbers = [1, 6, 4, 7, 2];
-const resultSum = ArrayNumbers.reduce(((total, amount) => total + amount));
+const arrayNumbers = [1, 6, 4, 7, 2];
+const resultSum = arrayNumbers.reduce(((total, amount) => total + amount));
 
 //вывод из объекта массив ключей
 const workerObject = {
