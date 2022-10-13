@@ -1,0 +1,15 @@
+#определяем версию Docker Compose
+version: '3.1'
+
+#описываем image и container
+services:
+  crtreactjs:
+    image: crtreactjs-image
+    container_name: crtreactjs-container
+#находим Dockerfile
+    build: ./
+    command: yarn start
+#прокидываем порты
+    ports:
+      - "3000:3000"
+    restart: on-failure

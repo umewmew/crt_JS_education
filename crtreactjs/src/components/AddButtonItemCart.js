@@ -7,7 +7,7 @@ const AddButtonItemCart = ({itemAddBtnBacket, itemAddBtnFavorite, itemAddBtnComp
     <div className="itemCart-addBtn-wrapper">
           {/* кнопка "добавить в корзину" */}
         <button className="itemCart-addBtn addBtn-backet" type="button">
-          <img src={"/image/icon/basket-icon.svg"} alt={"Добавить"}></img>
+          <img src={"/image/Icon/basket-icon.svg"} alt={"Добавить"}></img>
           {itemAddBtnBacket}
         </button>
 
@@ -20,7 +20,7 @@ const AddButtonItemCart = ({itemAddBtnBacket, itemAddBtnFavorite, itemAddBtnComp
 
         {/* кнопка "добавить в сравнение" */}
         <button className="itemCart-addBtn addBtn-compare"  type="button">
-          <img src={"/image/icon/compare.svg"} alt={"Добавить"}></img>
+          <img src={"/image/Icon/compare.svg"} alt={"Добавить"}></img>
           {itemAddBtnCompare}
         </button>
       </div>

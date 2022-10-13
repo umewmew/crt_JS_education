@@ -4,7 +4,6 @@ import AddButtonItemCart from './components/AddButtonItemCart.js';
 import OrderInfo from './components/OrderInfo.js';
 // import { useState } from 'react';
  
-
 const ItemCart = ({itemImageSrc, itemName, itemRatingValue, itemCommentAmount, itemPriceCurrent, itemOldPrice, itemBonusAmount, descriptionImage }) => {
 
   return (
